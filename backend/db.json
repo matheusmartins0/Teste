@@ -1,0 +1,32 @@
+{
+  "Tarefas": [
+    {
+      "id": 1,
+      "Titulo": "Notebook",
+      "Descrição": "Consertar tela",
+      "catTarefa": "Dificil",
+      "dataConclusao": "28/10/2021"
+    },
+    {
+      "Titulo": "",
+      "Descricao": "",
+      "Categoria": "",
+      "dataConclusao": "",
+      "id": 2
+    },
+    {
+      "Titulo": "",
+      "Descricao": "",
+      "Categoria": "",
+      "dataConclusao": "",
+      "id": 3
+    },
+    {
+      "Titulo": "Roteador",
+      "Descricao": "Consertar",
+      "Categoria": "Fácil",
+      "dataConclusao": "28/10/2021",
+      "id": 4
+    }
+  ]
+}
