@@ -1,0 +1,35 @@
+
+<mat-card>
+    <mat-card-title>Nova tarefa: </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título" 
+            [(ngModel)]= "tarefa.Titulo" Titulo="Titulo">                   
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" 
+            [(ngModel)]= "tarefa.Descricao" Titulo="Descricao">                    
+        </mat-form-field>
+        <mat-form-field>
+          
+            <input matInput placeholder="Categoria" div class='mat-sort-header-content'
+            [(ngModel)]= "tarefa.Categoria" Titulo="Categoria">
+            <select Categoria="select">
+                <option value="valor1">Fácil</option>
+                <option value="valor2" >Díficil</option>
+                <option value="valor3">Urgente</option>
+                <option value="valor3">Prioritária</option>
+              </select>                    
+        </mat-form-field>
+        <mat-form-field>
+            <input type="date"matInput placeholder="Data de conclusão"
+            [(ngModel)]= "tarefa.dataConclusao" Titulo="dataConclusao">                    
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="createTarefa()" color="primary">
+    Salvar
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>

@@ -1,0 +1,34 @@
+
+<mat-card>
+    <mat-card-title>Excluir Tarefa </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Título" 
+            [(ngModel)]= "tarefa.Titulo" Titulo="Titulo" disabled>                   
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" 
+            [(ngModel)]= "tarefa.Descricao" Titulo="Descricao" disabled>                    
+        </mat-form-field>
+        <mat-form-field>
+          
+            <input matInput placeholder="Categoria" div class='mat-sort-header-content'
+            [(ngModel)]= "tarefa.Categoria" Titulo="Categoria" disabled>
+            <select Categoria="select">
+                <option value="valor1">Fácil</option>
+                <option value="valor2" >Díficil</option>
+                <option value="valor3">Urgente</option>
+                <option value="valor3">Prioritária</option>
+              </select>                    
+        </mat-form-field>
+        <mat-form-field>
+            <input type="date"matInput placeholder="Data de conclusão"
+            [(ngModel)]= "tarefa.dataConclusao" Titulo="dataConclusao" disabled>                    
+        </mat-form-field>
+    </form>
+</mat-card>
+<button mat-raised-button (click)="deleteTarefa()" color="accent">
+    Excluir
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
